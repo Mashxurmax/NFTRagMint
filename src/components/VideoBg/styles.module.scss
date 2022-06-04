@@ -1,0 +1,165 @@
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 982px;
+    height: 988px;
+    overflow: hidden;
+}
+
+.video_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 982px;
+    height: 988px;
+}
+
+.video_bg_shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 982px;
+    height: 988px;
+    background: linear-gradient(0deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                linear-gradient(90deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                linear-gradient(-90deg, #171429 2%, rgba(23, 20, 41, 0) 10%);
+}
+
+@media (min-width: 1200px) and (max-width: 1333px) {
+    .video_bg {
+        right: -150px;
+    }
+
+    .video_bg_shadow {
+        right: -150px;
+        background: linear-gradient(0deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(90deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(-90deg, #171429 17%, rgba(23, 20, 41, 0) 25%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 710px;
+        height: 785px;
+    }
+
+    .video_bg {
+        top: -50px;
+        right: -50px;
+        width: 710px;
+        height: 785px;
+    }
+
+    .video_bg_shadow {
+        right: -50px;
+        width: 710px;
+        height: 785px;
+        background: linear-gradient(0deg, #171429 15%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(90deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(-90deg, #171429 7%, rgba(23, 20, 41, 0) 15%);
+    }
+}
+
+@media (max-width: 992px) {
+    .video_bg {
+        right: -100px;
+    }
+
+    .video_bg_shadow {
+        right: -100px;
+        background: linear-gradient(0deg, #171429 15%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(90deg, #171429 5%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(-90deg, #171429 12%, rgba(23, 20, 41, 0) 20%);
+    }
+}
+
+@media (max-width: 855px) {
+    .video_bg {
+        right: -120px;
+    }
+
+    .video_bg_shadow {
+        right: -120px;
+        background: linear-gradient(0deg, #171429 15%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(90deg, #171429 15%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(-90deg, #171429 12%, rgba(23, 20, 41, 0) 20%);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 608px;
+        height: 672px;
+    }
+
+    .video_bg {
+        right: -80px;
+        width: 608px;
+        height: 672px;
+    }
+
+    .video_bg_shadow {
+        right: -80px;
+        width: 608px;
+        height: 672px;
+        background: linear-gradient(0deg, #171429 15%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 5%, rgba(23, 20, 41, 0) 30%),
+                    linear-gradient(90deg, #171429 10%, rgba(23, 20, 41, 0) 35%),
+                    linear-gradient(-90deg, #171429 7%, rgba(23, 20, 41, 0) 20%);
+    }
+}
+
+@media (max-width: 717px) {
+    .container {
+        top: 200px;
+        right: 0;
+        width: 100%;
+    }
+
+    .video_bg {
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .video_bg_shadow {
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(0deg, #171429 10%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 10%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(90deg, #171429 2%, rgba(23, 20, 41, 0) 10%),
+                    linear-gradient(-90deg, #171429 2%, rgba(23, 20, 41, 0) 10%);
+    }
+}
+
+@media (max-width: 520px) {
+    .video_bg_shadow {
+        background: linear-gradient(0deg, #171429 20%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 20%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(90deg, #171429 2%, rgba(23, 20, 41, 0) 10%),
+                    linear-gradient(-90deg, #171429 2%, rgba(23, 20, 41, 0) 10%);
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        top: 220px;
+    }
+
+    .video_bg_shadow {
+        background: linear-gradient(0deg, #171429 25%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(180deg, #171429 25%, rgba(23, 20, 41, 0) 40%),
+                    linear-gradient(90deg, #171429 2%, rgba(23, 20, 41, 0) 10%),
+                    linear-gradient(-90deg, #171429 2%, rgba(23, 20, 41, 0) 10%);
+    }
+}

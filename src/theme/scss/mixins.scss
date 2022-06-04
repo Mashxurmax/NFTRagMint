@@ -1,0 +1,31 @@
+@mixin btn($color, $boxShadow) {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: $boxShadow;
+    font-family: Exo_Bold, sans-serif;
+    font-size: var(--main-fsize);
+    text-align: center;
+    color: $color;
+    background: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: 128px;
+        height: 44px;
+        border: 1px solid $color;
+        border-radius: var(--menu-bradius);
+        box-sizing: border-box;
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+}

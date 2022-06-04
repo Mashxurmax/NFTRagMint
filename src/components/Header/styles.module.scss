@@ -1,0 +1,101 @@
+@import '../../theme/scss/mixins';
+
+.header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+.header_logo {
+    width: 163px;
+    height: 60px;
+    margin-right: auto;
+
+    img {
+        display: inline-block;
+        width: 163px;
+        height: 60px;
+    }
+}
+
+.btn {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    width: 150px;
+    margin: 0 50px 0 25px;
+
+    &:before {
+        width: 158px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1333px) {
+    .container {
+        width: var(--container-width-ipad);
+        margin: 0 var(--container-mg-ipad);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .btn {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        width: auto;
+        margin-right: 20px;
+        padding: 0 25px;
+
+        &:before{
+            width: 125px;
+        }
+    }
+
+    .nav_wrap_small {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 0;
+    }
+
+    .container {
+        width: var(--container-width-mobile);
+        margin: 0 var(--container-mg-mobile);
+    }
+
+    .header_logo {
+        width: 100px;
+        height: 36px;
+
+        img {
+            width: 100px;
+            height: 36px;
+        }
+    }
+
+    .btn {
+        height: 24px;
+        width: 102px;
+        font-size: 14px;
+        line-height: 24px;
+
+        &:before {
+            height: 32px;
+            width: 110px;
+        }
+    }
+}
+

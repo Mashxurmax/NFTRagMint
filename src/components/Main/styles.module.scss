@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--main-bgcolor);
+    color: var(--main-color);
+    overflow: hidden;
+}
+
+.wrapper {
+    background: url('../../theme/assets/images/texture_back_main.png') left top no-repeat;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        background: url('../../theme/assets/images/texture_back_main.png') -50px top no-repeat;
+    }
+}
+
+@media (max-width: 1460px) {
+    .wrapper {
+        background: url('../../theme/assets/images/texture_back_main.png') -150px top no-repeat;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        background: url('../../theme/assets/images/texture_back_main.png') -200px top no-repeat;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        background: url('../../theme/assets/images/texture_back_main.png') -160px top/422px 422px no-repeat;
+    }
+}
+
+@media (max-width: 855px) {
+    .wrapper {
+        background: url('../../theme/assets/images/texture_back_main.png') -182px top/382px 382px no-repeat;
+    }
+}
+
+@media (max-width: 717px) {
+    .wrapper {
+        background: none;
+    }
+}

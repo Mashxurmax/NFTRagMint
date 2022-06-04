@@ -1,0 +1,203 @@
+@import '../../theme/scss/mixins';
+
+.popup_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(23, 20, 41, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+.popup {
+    position: absolute;
+    top: 200px;
+    left: calc((100% - 800px) / 2);
+    z-index: 2;
+    width: 800px;
+    padding: 20px;
+    border-radius: var(--card-bradius);
+    background: rgba(23, 20, 41, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 48px Min(10%, 148px);
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.description_caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & span:first-child {
+        display: inline-block;
+        font-family: Exo_Black, sans-serif;
+        font-size: var(--main-title-fsize);
+        line-height: 66px;
+        color: var(--btn-color);
+    }
+
+    & span:last-child {
+        display: inline-block;
+        font-family: Exo_Thin, sans-serif;
+        font-size: var(--ribbon-fsize);
+        line-height: 53px;
+    }
+}
+
+.description_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+        display: inline-block;
+        font-family: OpenSans_Bold, sans-serif;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+}
+
+.calculate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.calculate_field {
+    display: inline-block;
+    width: 200px;
+    height: 44px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--menu-bradius);
+    font-family: OpenSans_Bold, sans-serif;
+    font-size: var(--small-title-fsize);
+    line-height: 44px;
+    text-align: center;
+    color: var(--main-bgcolor)
+}
+
+.calculate_sum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & span:first-child {
+        display: inline-block;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+
+    & span:last-child {
+        display: inline-block;
+        font-family: OpenSans_Bold, sans-serif;
+        font-size: var(--main-fsize);
+        line-height: 25px;
+    }
+}
+
+.btn {
+    @include btn(var(--btn-color), var(--turquoise-bshadow));
+    width: 192px;
+
+    &:before {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .popup {
+        top: 50px;
+        left: calc((100% - 600px) / 2);
+        width: 600px;
+    }
+
+    .container {
+        padding: 48px Min(10%, 45px);
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .popup {
+        top: 50px;
+        left: calc((100% - 400px) / 2);
+        width: 400px;
+    }
+
+    .container {
+        padding: 38px Min(10%, 45px);
+    }
+
+    .description_caption {
+        & span:first-child {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        & span:last-child {
+            font-size: 30px;
+            line-height: 39px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        top: 50px;
+        left: calc((100% - 320px) / 2);
+        width: 320px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 30px Min(10%, 10px);
+    }
+
+    .description_caption {
+        & span:first-child {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        & span:last-child {
+            font-size: 30px;
+            line-height: 39px;
+            text-align: center;
+        }
+    }
+}

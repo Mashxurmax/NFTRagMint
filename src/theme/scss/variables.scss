@@ -1,0 +1,57 @@
+:root {
+    /* background-color */
+    --main-bgcolor: #171429;
+    --main-gradient-bgcolor: linear-gradient(180deg, rgba(23, 20, 41, 0) 0%, #171429 100%);
+    --pink-bgcolor: linear-gradient(90deg, #FAB7FE 0%, #57C3FF 100.87%);
+    --purpur-bgcolor: linear-gradient(180deg, #FAB7FE -31.98%, #5B4CBE 100%);
+    --purpur90-bgcolor: linear-gradient(90deg, #FAB7FE -31.98%, #5B4CBE 100%);
+    --purpur0-bgcolor: linear-gradient(0deg, #FAB7FE -31.98%, #5B4CBE 100%);
+    --btn-bgcolor: linear-gradient(95.09deg, #554E5E 0%, #393049 101.68%);
+    --benefits-bgcolor: linear-gradient(180deg, #444689 -41.46%, rgba(6, 6, 9, 0) 100%);
+    --card-bgcolor: rgba(0, 0, 0, 0.3);
+
+    /* color */
+    --main-color: #FFFFFF;
+    --title-color: #FAB7FE;
+    --btn-color: #9FE9FF;
+    --blue-color: #2081E2;
+    --red-color: #FF6565;
+    --purple-color: #7289DA;
+
+    /* border-color */
+    --pink-bc: linear-gradient(293.55deg, #FAB7FE -10.46%, rgba(250, 183, 254, 0) 25.31%);
+    --turquoise-bc: linear-gradient(293.55deg, #89DEFF -10.46%, rgba(137, 221, 255, 0) 25.31%);
+    --red-bc: linear-gradient(293.55deg, #FF6565 -10.46%, rgba(255, 101, 101, 0) 25.31%);
+    --blue-bc: linear-gradient(293.55deg, #2081E2 -10.46%, rgba(32, 129, 226, 0) 25.31%);
+    --pink45-bc: linear-gradient(-45deg, #FAB7FE 0%, #57C3FF 100.87%);
+
+    /* box shadow */
+    --pink-bshadow: 10px 10px 20px 0px rgba(250, 183, 254, 0.4);
+    --turquoise-bshadow: 10px 10px 20px 0 rgba(87, 195, 255, 0.4);
+    --red-bshadow: 10px 10px 20px rgba(255, 101, 101, 0.4);
+    --blue-bshadow: 10px 10px 20px 0px rgba(32, 129, 226, 0.4);
+    --purple-bshadow: 10px 10px 20px rgba(114, 137, 218, 0.4);
+
+    /* font-size */
+    --main-fsize: 18px;
+    --main-fsize-mobile: 14px;
+    --secondary-fsize: 14px;
+    --main-title-fsize: 50px;
+    --main-title-fsize-mobile: 30px;
+    --secondary-title-fsize: 70px;
+    --secondary-title-fsize-mobile: 50px;
+    --small-title-fsize: 24px;
+    --large-title-fsize: 100px;
+    --ribbon-fsize: 40px;
+    --ribbon-fsize-mobile: 20px;
+
+    /* dimensions */
+    --container-width: 1200px;
+    --container-width-ipad: calc(100% - 120px);
+    --container-width-mobile: calc(100% - 40px);
+    --container-mg-ipad: 60px;
+    --container-mg-mobile: 20px;
+    --btn-bradius: 7px;
+    --card-bradius: 20px;
+    --menu-bradius: 10px;
+}

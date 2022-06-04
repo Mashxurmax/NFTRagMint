@@ -1,0 +1,54 @@
+.socials {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.socials_list {
+    display: flex;
+    align-items: center;
+
+    li {
+        width: 20px;
+        height: 20px;
+
+        a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .socials_opensea {
+            background: url('../../theme/assets/icons/opensea_icon.svg');
+
+            &:hover {
+                background: url('../../theme/assets/icons/opensea_color_icon.svg');
+            }
+        }
+
+        .socials_insta {
+            background: url('../../theme/assets/icons/insta_icon.svg');
+
+            &:hover {
+                background: url('../../theme/assets/icons/insta_color_icon.svg');
+            }
+        }
+
+        .socials_telegram {
+            background: url('../../theme/assets/icons/telegram_icon.svg');
+
+            &:hover {
+                background: url('../../theme/assets/icons/telegram_color_icon.svg');
+            }
+        }
+
+        .socials_discord {
+            background: url('../../theme/assets/icons/discord_icon.svg');
+
+            &:hover {
+                background: url('../../theme/assets/icons/discord_color_icon.svg');
+            }
+        }
+    }
+}
